@@ -1,81 +1,102 @@
-					Maven Build Tool
-					================
+# 🚀 Maven Build Tool Guide (Beginner Friendly)
 
-What is Build
+## 👨‍💻 Author
+Syed Hussain  
+DevOps Learner | 4 Years Experience in Healthcare IT  
 
-Build is a process of automating the packages(jar, war, ear)
+---
 
+## 📌 Table of Contents
+- What is Build
+- About Maven
+- Build Tools
+- JAR vs WAR vs EAR
+- Maven Directory Structure
+- Build Script Files
 
-About Maven 
-===========
---> Maven is a popular build automation and project management tool used primarily for Java projects.
---> Developed by the Apache Software Foundation.
---> Maven is an open source build tool.
---> Maven is a platform independent. for Ex: U can install in windows,linux and mac
---> Maven is not an executable software(.exe), It is in the zip/tar.gz (download and extract)
---> if you want to download maven use this link below
-   https://maven.apache.org/download.cgi  --> download maven zip file
+---
 
+## 📌 What is Build
 
+Build is a process of automating the creation of packages like:
+- JAR
+- WAR
+- EAR
 
-What are the build tools
-========================
-+---------+----------------------+
-| Language| Build Tools          |
-+---------+----------------------+
-| Java    | Ant, Maven, Gradle   |
-| Python  | PyBuilder            |
-| .NET    | MS Build, NAnt       |
-| Ruby    | Rake                 |
-| Go      | Go Build Tool        |
-+---------+----------------------+
+---
 
+## 📌 About Maven
 
-what is jar, war, ear 
-=====================
-jar stands for java archive
-war stands for web archive
-ear stands for enterprise archive
+- Maven is a **build automation and project management tool** used for Java projects  
+- Developed by the **Apache Software Foundation**  
+- Open-source tool  
+- Platform independent (Windows, Linux, Mac)  
+- Maven is not an executable (.exe), it comes as **.zip / .tar.gz**  
+- Download and extract to use  
 
-+----------------------+------------------------------------------+----------------------------------------------+----------------+
-| Application Type     | Description                              | Contents                                     | Example        |
-+----------------------+------------------------------------------+----------------------------------------------+----------------+
-| Standalone (JAR)     | Runs on your local machine               | JAR contains  (.class files)                 | Calculator     |
-|                      | (no internet required)                   |                                              |                |
-|                      | Java code                                |                                              |                |
-+----------------------+------------------------------------------+----------------------------------------------+----------------+
-| Web (WAR)            | Runs on the internet using a browser     | WAR contains (JAR + HTML/CSS3/JS/Images)     | Redbus         |
-|                      | Java code + Web content                  |                                              |                |
-|                      | (HTML/CSS3/JS/Images)                    |                                              |                |
-+----------------------+------------------------------------------+----------------------------------------------+----------------+
-| Enterprise (EAR)     | Large and complex applications           | EAR contains (JAR + WAR +                    | Banking systems|
-|                      | used by big organizations                | HTML/CSS3/JS/Images + Modules)               |                |
-|                      | Java code + Web content +                |                                              |                |
-|                      | Standalone & Web modules                 |                                              |                |
-+----------------------+------------------------------------------+----------------------------------------------+----------------+
+🔗 Download Maven:  
+https://maven.apache.org/download.cgi  
 
-Maven Download Link:
-https://maven.apache.org/download.cgi
+---
 
+## 📌 Build Tools by Language
 
+| Language | Build Tools |
+|---------|------------|
+| Java    | Ant, Maven, Gradle |
+| Python  | PyBuilder |
+| .NET    | MS Build, NAnt |
+| Ruby    | Rake |
+| Go      | Go Build Tool |
 
-Maven directory structure
-=========================
+---
 
-bin ---> contains binary files [mvn, etc]
+## 📌 JAR vs WAR vs EAR
 
-boot ---> contains jar files used at runtime 
+| Application Type | Description | Contents | Example |
+|-----------------|------------|----------|--------|
+| Standalone (JAR) | Runs on local machine (no internet required) | .class files | Calculator |
+| Web (WAR) | Runs on browser (internet required) | JAR + HTML/CSS/JS/Images | Redbus |
+| Enterprise (EAR) | Large-scale applications used by organizations | JAR + WAR + Modules | Banking Systems |
 
-conf ---> configuration files[settings.xml]
+---
 
-lib ---> contains library files[jars]
+## 📌 Maven Directory Structure
 
+| Folder | Description |
+|--------|------------|
+| bin | Contains mvn commands |
+| boot | Contains runtime jar files |
+| conf | Configuration files (settings.xml) |
+| lib | Library jar files |
 
-default xml file names for build scripts
-=========================================
+---
 
-pom.xml										 ---> maven
-build.xml 									 ---> ant
-build.gradle[we can not use xml for gradle]  ---> gradle
+## 📌 Build Script File Names
 
+| Tool | File Name |
+|------|----------|
+| Maven | pom.xml |
+| Ant | build.xml |
+| Gradle | build.gradle |
 
+---
+
+## 📌 Key Notes
+
+- JAR → Java Archive (Standalone Application)  
+- WAR → Web Archive (Web Application)  
+- EAR → Enterprise Archive (Large Applications)  
+
+---
+
+## 🚀 Next Steps (Coming Soon)
+
+- Sample `pom.xml`
+- Maven Lifecycle Commands
+- Real-time project example
+- CI/CD integration using Jenkins
+
+---
+
+⭐ If you found this useful, feel free to star the repo!
